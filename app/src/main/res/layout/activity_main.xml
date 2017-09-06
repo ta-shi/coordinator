@@ -14,15 +14,29 @@
         <com.example.tashi.coordinator.SearchHeaderView
             android:id="@+id/app_bar2"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             app:layout_behavior=".SearchHeaderBehavior"
             >
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:text="Filter"
+                android:textColor="@color/colorAccent"
+                android:background="@color/colorPrimaryDark"
+                android:visibility="visible"/>
+            <TextView
+                android:id="@+id/mini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="short filter"
+                android:textColor="@color/colorAccent"/>
         </com.example.tashi.coordinator.SearchHeaderView>
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerview"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
